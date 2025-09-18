@@ -1,0 +1,37 @@
+.travel-planner {
+  padding: 2rem;
+  text-align: center;
+}
+
+.travel-planner h2 {
+  margin-bottom: 1rem;
+  color: #34495e;
+}
+
+.travel-planner form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.travel-planner input {
+  padding: 0.7rem;
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.travel-planner button {
+  background: #3498db;
+  color: #fff;
+  border: none;
+  padding: 0.7rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.travel-planner button:hover {
+  background: #2980b9;
+}

@@ -1,0 +1,9 @@
+### Node.js ###
+node_modules/
+
+### Environment variables ###
+.env
+
+### Frontend-specific ###
+travel-chatbot-ui/node_modules/
+travel-chatbot-ui/.env
