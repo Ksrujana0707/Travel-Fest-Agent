@@ -1,0 +1,115 @@
+.navbar {
+  background: linear-gradient(90deg, #0066cc, #004080);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 20px;
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  transition: box-shadow 0.3s, background 0.3s;
+}
+
+/* Shadow on scroll */
+.navbar.scrolled {
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(90deg, #0052a3, #003366);
+}
+
+.nav-logo a {
+  font-weight: bold;
+  font-size: 22px;
+  color: white;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-logo a:hover {
+  color: #ffcc00;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.nav-links a, .logout-btn, .menu-btn {
+  color: white;
+  text-decoration: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 6px 12px;
+  border-radius: 8px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.nav-links a:hover,
+.logout-btn:hover,
+.menu-btn:hover {
+  background: rgba(255,255,255,0.2);
+  color: #ffcc00;
+}
+
+/* Hamburger */
+.nav-toggle {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+  color: white;
+}
+
+/* Floating icons */
+.floating-icons {
+  position: absolute;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  gap: 10px;
+}
+
+.floating-icons .icon {
+  font-size: 20px;
+  opacity: 0.8;
+  transition: transform 0.4s, opacity 0.4s;
+}
+
+.floating-icons .icon:hover {
+  transform: translateY(-5px);
+  opacity: 1;
+}
+
+/* Responsive Menu */
+@media (max-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: -250px;
+    background: #004080;
+    width: 200px;
+    padding: 15px;
+    border-radius: 8px;
+    gap: 15px;
+    transition: right 0.4s ease, opacity 0.4s ease;
+    opacity: 0;
+  }
+
+  .nav-links.open {
+    right: 0;
+    opacity: 1;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .floating-icons {
+    display: none; /* hide on mobile */
+  }
+}

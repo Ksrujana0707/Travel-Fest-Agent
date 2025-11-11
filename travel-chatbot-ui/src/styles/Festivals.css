@@ -1,0 +1,23 @@
+.festivals {
+  padding: 2rem;
+  text-align: center;
+}
+
+.festivals h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+}
+
+.festivals ul {
+  list-style: none;
+  padding: 0;
+}
+
+.festivals li {
+  font-size: 1.1rem;
+  margin: 0.5rem 0;
+  background: #f0f8ff;
+  padding: 0.5rem;
+  border-radius: 8px;
+}
